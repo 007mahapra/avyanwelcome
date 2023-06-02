@@ -64,8 +64,8 @@
      
     var dropdown = document.getElementById("myDropdown");
      // var selectedText = dropdown.options[dropdown.selectedIndex].text;
-      var text = "Welcome "+ dropdown.options[dropdown.selectedIndex].value+" ji, This is Aavyaan's Jungle Safari. Get ready to enjoy and have fun on this ride. Thank you for coming... hip hip hurray!!!";
-      
+      //var text = "Welcome "+ dropdown.options[dropdown.selectedIndex].value+" ji, This is Aavyaan's Jungle Safari. Get ready to enjoy and have fun on this ride. Thank you for coming... hip hip hurray!!!";
+      var text = "Welcome, "+ dropdown.options[dropdown.selectedIndex].value;
       // Create a new speech synthesis instance
       var synth = window.speechSynthesis;
 
@@ -91,52 +91,49 @@
     <h1 style="color:white">Select your name</h1>
     <select id="myDropdown">
       <option value=" ">Select your name</option>
-     
-    <option value="Amar">Amar Pangare</option>
-    <option value="Ankur">Ankur Pahooja</option>
-    <option value="Deepak">Deepak Kapoor</option>
-    <option value="Ganesh">Ganesh Jadhav</option>
-    <option value="Himanshu">Himanshu Arya</option>
-    <option value="Hitesh">Hitesh Jadhav</option>
-    <option value="Jai">Jai Nanwani</option>
-    <option value="Jatin">Jatin Chandok</option>
-    <option value="Jitendra">Jitendra Sharma</option>
-    <option value="Juhi">Juhi Keserwani</option>
-    <option value="Kavyanjali">Kavyanjali Sharma</option>
-    <option value="Lata">Lata Kalwani</option>
-    <option value="Mishka">Mishka Nanwani</option>
-    <option value="Mishti">Mishti Kapoor</option>
-    <option value="Namit">Namit Chakkarwar</option>
-    <option value="Narender">Narender Bhardwaj</option>
-    <option value="Navroop">Navroop Sood</option>
-    <option value="Neelam">Neelam Arya</option>
-    <option value="Neha">Neha Kapoor</option>
-    <option value="Nitin">Nitin Chandok</option>
-    <option value="Nitin">Nitin Sood</option>
-    <option value="Pankaj">Pankaj Parker</option>
-    <option value="Pooja">Pooja Parker</option>
-    <option value="Praful">Praful Chakkarwar</option>
-    <option value="Rachna">Rachna Chakkarwar</option>
-    <option value="Rita">Rita Singh</option>
-    <option value="Rohan">Rohan Chakkarwar</option>
-    <option value="Sahil">Sahil Jindal</option>
-    <option value="Sangeeta">Sangeeta Pangare</option>
-    <option value="Sanyog">Sanyog Keserwani</option>
-    <option value="Shailza">Shailza Bhardwaj</option>
-    <option value="Shilpi">Shilpi Sharma</option>
-    <option value="Shivanki">Shivanki Jindal</option>
-    <option value="Shubhit">Shubhit Arya</option>
-    <option value="Siddhi">Siddhi Salgaonkar</option>
-    <option value="Sidhak">Sidhak Salgaonkar</option>
-    <option value="SM Singh">SM Singh</option>
-    <option value="Sonal">Sonal Chandok</option>
-    <option value="Subodh">Subodh Salgaonkar</option>
-    <option value="Swara">Swara Salgaonkar</option>
-    <option value="Tom">Tom Kalwani</option>
-    <option value="Udantika">Udantika Pangare</option>
-    <option value="Udantika">Udantika Sharma</option>
-    <option value="Vaanya ">VaanyaChandok </option>
-    <option value="Vidhi">Vidhi Nanwani</option>    
+    <option value="Amar Ji ,You are cheerful, sweet, great cook and a delicious person.I would like to eat world famous chicken lollipop that you make, haha. Thanks for coming in my birthday.Please bless me and guide me to be good person.">Amar Pangare</option>
+    <option value="Ankur ji, You are so lovely, a great poet & script writer. I would love to hear your poems and learn a lot from you. Keep me blessed as always.Thanks for coming !! ">Ankur Pahooja</option>
+    <option value="Deepak Ji , I am so happy to see you at my birthday, hope you enjoy the party. Thanks for coming.">Deepak Kapoor</option>
+    <option value="Ganesh Ji, You are very sweet & a great Dholak player. I would like to learn a lot from you. Good to see you in my birthday. Thanks for coming !!">Ganesh Jadhav</option>
+    <option value="Himanshu Ji , I am so happy to see you at my birthday, hope you enjoy the party. Thanks for coming.">Himanshu Arya</option>
+    <option value="Hitesh Ji, You are a great photographer, I know you have taken lot of pictures and made everyone star overnight, I know you are going to take best pictures of me at my first birthday. Thanks for coming.">Hitesh Jadhav</option>
+    <option value="Jai ji, You are soft spoken & a loving person, I know you miss your kids when you look at me and it's good to see that they are here now. I will be their best friend and we will grow up together and have fun. Thanks for joining.">Jai Nanwani</option>
+    <option value="Jatin ji, You are a great person, soft spoken , caring and food lover. Always Be the best friend of my papa and keep him teaching, how to be a great dad. Haha , thanks for coming !!">Jatin Chandok</option>
+    <option value="Jitendra Ji, You are very learnet saint, cheerful, comic and loving person. I would love to borrow a lot of books and knowledge from you. Keep me blessed and guide me to be a nice person just like you. Thanks for coming.">Jitendra Sharma</option>
+    <option value="Juhi ji, I know you always want to hold me in your arms and I like to come to you to play and laugh. I would like to make great memories while growing up, so keep loving me. Thanks for coming.">Juhi Keserwani</option>
+    <option value="Kavyanjali ji, You are very adorable, sweet and beautiful. Let's be great friends while growing up. Also let's start learning, how to write poems. So we can also present it in Satsang just like our parents. Hehe, thanks for coming.">Kavyanjali Sharma</option>
+    <option value="Mishka JI , I am so happy to see you at my birthday, hope you enjoy and we become good friends forever. Thanks for coming.">Mishka Nanwani</option>
+    <option value="Mishti ji, Your name is sweet, so are you. I know you like to sing with your mummy and follow what your parents say. I would also like to learn from you, how to obey our parents. Thanks for coming.">Mishti Kapoor</option>
+    <option value="Namit Ji, I know you are Shark enthusiast and also a mini scientist. Hehe,From you, I would like to learn a lot about sharks and also the best poems that you write. Hope you enjoyt my birthday party. Thanks for coming.">Namit Chakkarwar</option>
+    <option value="Narendar ji, You are sweet , great Tabla player and photographer. I know you have taken a lot of photos when I was in my mumma's tummy. You are a great uncle. Thanks for coming.    ">Narender Bhardwaj</option>
+    <option value="Navroop Ji, You are very sweet, caring and loving person. I have heard a lot about you. Please bless me to be a good person as you are. Thanks for coming.">Navroop Sood</option>
+    <option value="Neelam Ji , you are very sweet, caring and lovely person. I would love to take few pictures with you. Hold the camera and say cheese.. Thanks for coming.">Neelam Arya</option>
+    <option value="Neha ji, You are great singer, I would love to learn singing from you. Thanks for coming with family, hope you have a great time in my Jungle Safari.">Neha Kapoor</option>
+    <option value="Nitin JI, I know you are very smart and you love reading books. Hope you will recommend me great books and teach me a b c d while I grow up. Happy to see you in my birthday party. Let's have fun together.">Nitin Chandok</option>
+    <option value="Nitin ji, you are very sweet, calm and full of enthusiasm, I know a lot about your dog, Milo. I would like to be best friends with you. Please bless me and guide me to be a good person.">Nitin Sood</option>
+    <option value="Pankaj ji, you are sweet and caring. I know you like to run and jog and nobody can match you. It's great to see you here at my birthday. Don't run away without taking pictures with me. Kidding, let's have fun together.">Pankaj Parker</option>
+    <option value="Pooja ji, You are sweet , cheerful & caring. I know you have lot of jokes which makes everyone laugh. I am so happy to see you here at my jungle safari. Hope you enjoy it.">Pooja Parker</option>
+    <option value="Doctor Praful ji, you are a calm, composed & great speaker. I know you are a doctor , but you won't poke needle because you are so sweet. You are brave , keep saving the world. Thanks for coming.">Praful Chakkarwar</option>
+    <option value="Doctor Rachna ji, You are very sweet , caring and soft spoken. I would like to learn a lot from you in Baal Satsang, keep me blessed and guided. Thanks for coming.">Rachna Chakkarwar</option>
+    <option value="Reverent Rita Ji, You are sweet, caring & loving person. I would love to learn and grow under your guidance. Please bless me to be good person and bestow your best wishes on my first birthday. ">Rita Singh</option>
+    <option value="Rohan ji, You are our rockstar ! You are smart and caring. You are great musician also , I would love to learn a lot from you. Thanks for coming in my jungle safari, yo big brother !!">Rohan Chakkarwar</option>
+    <option value="Sahil Ji, you are a very sweet person. I am very happy that you have come to my birthday party, Hope you enjoy it, let's take some photos for memories. Thanks for coming.">Sahil Jindal</option>
+    <option value="Sangita ji, you are very sweet, adorable and lovely person. You make me laugh. I would like to play hide and seek with you. I am so happy you are here at my birthday party. Thanks for coming.">Sangeeta Pangare</option>
+    <option value="Sanyog ji, you are very cheerful, sweet and a great vlogger. I want you to vlog my jungle safari birthday party and make it a memorable one. Thanks for coming.">Sanyog Keserwani</option>
+    <option value="Shaileja ji, you are so sweet and loving person. I love to play with you. We have lot of memories, and I would like to make more. Thanks for coming.">Shailza Bhardwaj</option>
+    <option value="Shilpi ji, you are very sweet, loving & cheerful. You are great poet writer too. I like to listen your poems though I am small.  I would like to learn a lot from you. Thanks for coming.">Shilpi Sharma</option>
+    <option value="Shivanki Ji, you are a very nice person. I am very happy that you have come to my birthday party, Hope you enjoy it, let's take some photos for memories.">Shivanki Jindal</option>
+    <option value="Shubhit ji, you are sweet and cheerful. I am so happy to see you at my birthday party, Hope you enjoy. Let's make some great memories while dancing and singing. ">Shubhit Arya</option>
+    <option value="Siddhi ji, you are multi-talented, caring and loving person. We often go to satsang togther in the MRT and I enjoy that. I am so happy that you have come to my birthday. Hope you enjoy it.">Siddhi Salgaonkar</option>
+    <option value="Sidhak Ji, You are best dada, my big brother. You care a lot about me and we together go to Satsang. I love to play with you. Thanks for coming, have fun. All the best for your holiday travel.">Sidhak Salgaonkar</option>
+    <option value="Reverent Sam ji, This is my jungle safari , hope we all have fun together, please bless me and guide me so that I become good person and remain connected to Sewa, Sumiran & Satsang. Thanks for your blessing & presence in my birthday.">SM Singh</option>
+    <option value="Sonal ji, you are sweet, caring and cheerful. I am so happy to see you at my birthday party. Please bless me to be a good person right from childhood. Thanks for coming.">Sonal Chandok</option>
+    <option value="Subodh ji, You are very sweet , cheerful and fun loving kaka. I like to play hide and seek with you. You make me laugh always. Let's make great memories together, thanks for coming.">Subodh Salgaonkar</option>
+    <option value="Swara ji, you are very cheerful and sweet. I like to play with you. Let's be great friends forever. Thanks for coming in my birthday party. Hope you have fun, enjoy.">Swara Salgaonkar</option>
+    <option value="Udantika ji, You are very sweet, caring and calm person. I know you care a lot about me. Let's always be great friends and grow as best person together. High Five you doll.. Thanks for coming.">Udantika Pangare</option>
+    <option value="Udantika Ji, you are very sweet, caring & adorable. You care a lot about me. You make me laugh and I like to play with you. I am eager to hear your poem. Let's be great friends forever. Thanks for coming.">Udantika Sharma</option>
+    <option value="Vaanya Ji, you are so sweet, funny and cheerful. I am so happy to see you at my birthday party. Let's dance and have fun together. Thanks for coming.">Vaanya Chandok </option>
+    <option value="Vidhi Ji, you are very sweet and caring. I am so happy to see you at my birthday party. Please bless me to be a good person right from childhood. Thanks for coming.">Vidhi Nanwani</option>       
     </select>
     <button id="button" onclick="speak()">GO</button>
   </div>
