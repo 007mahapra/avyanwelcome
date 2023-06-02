@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text to Audio</title>
+  <style>
+    body {
+      background: url(jungle.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color:white;
+      margin-top:20%;
+    }
+
+    .animal {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    @keyframes move {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+      }
+    }
+  </style>
+  <script>
+    function speak() {
+     
+    var dropdown = document.getElementById("myDropdown");
+     // var selectedText = dropdown.options[dropdown.selectedIndex].text;
+      var text = "Welcome "+ dropdown.options[dropdown.selectedIndex].text+" ji, This is Aavyaan's Jungle Safari. Get ready to enjoy and have fun on this ride. Thank you for coming... hip hip hurray!!!";
+      
+      // Create a new speech synthesis instance
+      var synth = window.speechSynthesis;
+
+      // Cancel any ongoing speech synthesis
+      synth.cancel();
+      
+      // Create a new speech utterance
+      var utterance = new SpeechSynthesisUtterance(text);
+
+      // Configure the speech utterance settings (optional)
+      utterance.lang = 'en-IN'; // Set the language
+      utterance.volume = 1.0;   // Set the volume (0.0 to 1.0)
+      utterance.rate = 1.0;     // Set the speaking rate (0.1 to 10.0)
+      utterance.pitch = 1.0;    // Set the pitch (0.1 to 2.0)
+
+      // Speak the text
+      synth.speak(utterance);
+    }
+  </script>
+</head>
+<body>
+<center>
+  <h1>Welcome!!! Please Select your name and Click Go button</h1>
+  <select id="myDropdown" style="height:10%">
+    <option value=" ">Select your name</option>
+    <option value="Amar Pangare">Amar Pangare</option>
+    <option value="Ankur Pahooja">Ankur Pahooja</option>
+    <option value="Deepak Kapoor">Deepak Kapoor</option>
+    <option value="Ganesh Jadhav">Ganesh Jadhav</option>
+    <option value="Himanshu Arya">Himanshu Arya</option>
+    <option value="Hitesh Jadhav">Hitesh Jadhav</option>
+    <option value="Jai Nanwani">Jai Nanwani</option>
+    <option value="Jatin Chandok">Jatin Chandok</option>
+    <option value="Jitendra Sharma">Jitendra Sharma</option>
+    <option value="Juhi Keserwani">Juhi Keserwani</option>
+    <option value="Kavyanjali Sharma">Kavyanjali Sharma</option>
+    <option value="Lata Kalwani">Lata Kalwani</option>
+    <option value="Mishka Nanwani">Mishka Nanwani</option>
+    <option value="Mishti Kapoor">Mishti Kapoor</option>
+    <option value="Namit Chakkarwar">Namit Chakkarwar</option>
+    <option value="Narender Bhardwaj">Narender Bhardwaj</option>
+    <option value="Navroop Sood">Navroop Sood</option>
+    <option value="Neelam Arya">Neelam Arya</option>
+    <option value="Neha Kapoor">Neha Kapoor</option>
+    <option value="Nitin Chandok">Nitin Chandok</option>
+    <option value="Nitin Sood">Nitin Sood</option>
+    <option value="Pankaj Parker">Pankaj Parker</option>
+    <option value="Pooja Parker">Pooja Parker</option>
+    <option value="Praful Chakkarwar">Praful Chakkarwar</option>
+    <option value="Rachna Chakkarwar">Rachna Chakkarwar</option>
+    <option value="Rita Singh">Rita Singh</option>
+    <option value="Rohan Chakkarwar">Rohan Chakkarwar</option>
+    <option value="Sahil Jindal">Sahil Jindal</option>
+    <option value="Sangeeta Pangare">Sangeeta Pangare</option>
+    <option value="Sanyog Keserwani">Sanyog Keserwani</option>
+    <option value="Shailza Bhardwaj">Shailza Bhardwaj</option>
+    <option value="Shilpi Sharma">Shilpi Sharma</option>
+    <option value="Shivanki Jindal">Shivanki Jindal</option>
+    <option value="Shubhit Arya">Shubhit Arya</option>
+    <option value="Siddhi Salgaonkar">Siddhi Salgaonkar</option>
+    <option value="Sidhak Salgaonkar">Sidhak Salgaonkar</option>
+    <option value="SM Singh">SM Singh</option>
+    <option value="Sonal Chandok">Sonal Chandok</option>
+    <option value="Subodh Salgaonkar">Subodh Salgaonkar</option>
+    <option value="Swara Salgaonkar">Swara Salgaonkar</option>
+    <option value="Tom Kalwani">Tom Kalwani</option>
+    <option value="Udantika Pangare">Udantika Pangare</option>
+    <option value="Udantika Sharma">Udantika Sharma</option>
+    <option value="VaanyaChandok ">VaanyaChandok </option>
+    <option value="Vidhi Nanwani">Vidhi Nanwani</option>    
+  </select>
+  <button onclick="speak()">GO</button>
+  </center>
+  
+  
+</body>
+</html>
