@@ -50,9 +50,7 @@
       utterance.rate = 1.0;     // Set the speaking rate (0.1 to 10.0)
       utterance.pitch = 1.0;    // Set the pitch (0.1 to 2.0)
       
-       utterance.voice = speechSynthesis.getVoices().find(function(voice) {
-        return voice.name.includes('female') && voice.lang === language;
-         
+      
       // Speak the text
       synth.speak(utterance);
     }
